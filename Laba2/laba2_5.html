@@ -1,75 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Форма регистрации пользователя</h1>
-    <form action="vladimirbagrov.github.io/test.txt" enctype="text/plain" method="post"></form>
-    <table>
-        <tr>
-            <td><label for="email">E-mail:</label></td>
-            <td><input id="email" placeholder="Введите email:" type="email" name="email" required></td>
-            
-        </tr>
-        <tr>
-            <td><label for="password">Пароль:</label></td>
-            <td><input id="password" placeholder="Введите пароль:" type="password" name="Pasword" required></td>
-        </tr>
-        <tr>
-            <td><label>Пол</label></td>
-            <td><label><input type="radio" name="gen" value="man" checked >Мужской</label>
-                <label><input type="radio" name="gen" value="wom" >Женский</label></td>
-        </tr>
-        <tr>
-            <td><label>Год рождения</label></td>
-            <td>
-                <select name="year">
-                    <option>1980</option>
-                    <option>1991</option>
-                    <option>1992</option>
-                    <option>1993</option>
-                    <option>1994</option>
-                    <option>1995</option>
-                    <option>1996</option>
-                    <option>1997</option>
-                    <option>1998</option>
-                    <option>1999</option>
-                    <option>2000</option>
-                    <option>2001</option>
-                    <option>2002</option>
-                    <option>2003</option>
-                    <option>2004</option>
-                    <option>2005</option>
-                    <option>2006</option>
-                    <option>2007</option>
-                    <option>2008</option>
-                    <option>2009</option>
-                    <option>2010</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td><label>Я знаю</label></td>
-            <td>
-                <p><label><input type="checkbox" name="lang" value="ru" checked disabled>Русский язык</label></p>
-                <p><label><input type="checkbox" name="lang" value="sp" >Испанский язык</label></p>
-                <p><label><input type="checkbox" name="lang" value="en" checked disabled>Английский язык</label></p>
-                <p><label><input type="checkbox" name="lang" value="ge" >Немецкий язык</label></p>
-                <p><label><input type="checkbox" name="lang" value="ch" >Китайский язык</label></p>
-            </td>
-        </tr>
-        <tr>
-            <td><label>Обо мне</label></td>
-            <td><textarea placeholder="Напишите о себе:" rows="10" cols="30" name="dis"></textarea></td>
-        </tr>
-        <tr>
-            <td><button type="submit">Готово</button></td>
-            <td><button type="reset">Очистить</button></td>
-        </tr>
-    </table>
-</body>
+        <head>
+        <meta charset="utf-8">
+        <title>Форма</title>
+        <style>
+            table {
+                width: 400px;
+                border: 0px solid rgb(42, 16, 99);
+                margin: 15px;
+                float:left
+            }
+            td, th {
+                border: 0px solid rgb(42, 16, 99);
+                padding: 5px;
+            }
+            </style>
+        </head>
+        <body>
+            <h1>Форма регистрации пользователя</h1>
+        
+              <form action="#">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th><label for="name_1"> E-mail</label></th>
+                            <td><input type="email" id = "name_1" placeholder="Введите e-mail" name="first_email" required ></td>
+                        </tr>
+                        <tr>
+                            <th><label for="name_2">Пароль</label></th>
+                            <td><input type="password" id = "name_2" name="first_password" placeholder="Введите пароль" required></td>
+                        </tr>
+                        <tr>
+                            <th>Пол</th>
+                            <td><label>
+                                <input type="radio" name="status"> Мужчина
+                            </label>
+                            <label>
+                                <input type="radio" name="status"> Женщина
+                            </label></td>
+                        </tr>
+                        <tr>
+                            <th>Дата рождения:</th>
+                                <td><label><input type="date"></label></td>
+                        </tr>
+                        <tr>
+                            <th>Я знаю:</th>
+                            <td> 
+                                <label>
+                                    <input type="checkbox" checked="" disabled="" name="Русский" id="Русский" value="yes">Русский<br>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Английский"  >Английский<br>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Испанский" id="Испанский" value="yes">Испанский<br>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Китайский" id="Китайский" value="yes">Китайский<br>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="Немецкий" id="fr" value="yes">Немецкий<br>
+                                </label>
+                            </td>
+                                
+                        </tr>
+                        <tr>
+                            <th><label for="message">Обо мне</label></th><th> <textarea name="comment" placeholder="Напиши коротко о себе" id="message"></textarea></th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><button type = "submit">Готово</button>
+                                <button type="reset">Очистить</button>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </body>
 </html>
